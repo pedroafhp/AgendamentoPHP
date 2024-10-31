@@ -1,7 +1,9 @@
 <?php
     namespace PHP\Modelo;
+
     require_once('Pessoa.php');
     require_once('Endereco.php');
+    
     use PHP\Modelo\Pessoa;
     use PHP\Modelo\Endereco;
 

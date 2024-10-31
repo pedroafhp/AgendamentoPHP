@@ -1,5 +1,6 @@
 <?php
     namespace PHP\Modelo;
+
     require_once('Endereco.php');
     use PHP\Modelo\Endereco;
 
@@ -8,6 +9,8 @@
         protected string $nome;
         protected string $telefone;
         protected Endereco $endereco;
+
+ 
 
         public function __construct(string $cpf, string $nome, string $telefone, Endereco $endereco)
         {

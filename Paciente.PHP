@@ -3,16 +3,15 @@
 
     require_once('Pessoa.php');
     require_once('Endereco.php');
+    
     use PHP\Modelo\Pessoa;
     use PHP\Modelo\Endereco;
 
     Class Paciente extends Pessoa{
-        protected string $procedimento;
 
-        public function __construct(string $cpf, string $nome, string $telefone, Endereco $endereco, string $procedimento)
+        public function __construct(string $cpf, string $nome, string $telefone, Endereco $endereco)
         {
             parent:: __construct($cpf, $nome, $telefone, $endereco);
-            $this -> procedimento = $procedimento;
         }//Fim do Construtor
 
         //Métodos Gets e Sets
@@ -28,8 +27,7 @@
 
         public function imprimir():string
         {
-            return parent::imprimir().
-                "<br>Procedimento Agendado: ".$this -> procedimento;
+            return parent::imprimir();
         }//Fim do Imprimir
     
     }//Fim da Classe
